@@ -1,0 +1,18 @@
+<html>
+
+<body>
+    {% if data %}
+    {% for d in data %}
+    <div style="padding: 16px;">
+        <b>Title</b> : {{ d['title'] }} <br>
+        <b>Company Name</b> : {{ d['name'] }} <br>
+        <b>Location</b> : {{ d['location'] }} <br>
+        <b>Salary</b> : {{ d['salary'] }} <br>
+        <b>Details</b> : {{ d['details'] }}
+        <a href="{{ d['url'] }}"> Job Url</a> <br>
+    </div>
+    {% endfor %}
+    {% endif %}
+</body>
+
+</html>
